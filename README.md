@@ -48,3 +48,5 @@ The data used for this project was obtained from the UCI Machine Learning Reposi
 1 - Optuna is a powerful and efficient technique for hyperparameter tuning in machine learning, especially when the search space is large or complex.
 
 2 - Hyperropt It is an open-source Python library that uses a combination of random search and a technique called Tree-structured Parzen Estimator (TPE) to optimize hyperparameters. 
+
+# Descipe in Hyperparameter-optimization file
