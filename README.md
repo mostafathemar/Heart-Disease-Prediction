@@ -49,4 +49,4 @@ The data used for this project was obtained from the UCI Machine Learning Reposi
 
 2 - Hyperropt It is an open-source Python library that uses a combination of random search and a technique called Tree-structured Parzen Estimator (TPE) to optimize hyperparameters. 
 
-# Descipe in Hyperparameter-optimization file
+### Descripe in Hyperparameter-optimization file
