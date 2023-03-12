@@ -18,14 +18,14 @@ The data used for this project was obtained from the UCI Machine Learning Reposi
 
 # Results
 
-1 - ExtraTrees Using Optuna This is Best Accuracy (98.8%)
-2 - RandomForst using Using Hyperparameter tuning Gridsearch (98%)
-3 - LogisticRegression Using Hyperparameter tuning Gridsearch (86%)
-4 - SVM Using Hyperparameter tuning Gridsearch (70%)
-5 - K-Nearest Neighbors with find best K with minimum error (76%)
-6 - DecisionTree Using Hyperparameter tuning Grifsearch (84%)
-7 - XGB Using Hyperparameter tuning Gridsearch (82%)
-8 - AdaBoost Using Hyperparameter tuning Gridsearch (83%)
+1 - ExtraTrees Using Optuna This is Best Accuracy (98.8%).
+2 - RandomForst using Using Hyperparameter tuning Gridsearch (98%).
+3 - LogisticRegression Using Hyperparameter tuning Gridsearch (86%).
+4 - SVM Using Hyperparameter tuning Gridsearch (70%).
+5 - K-Nearest Neighbors with find best K with minimum error (76%).
+6 - DecisionTree Using Hyperparameter tuning Grifsearch (84%).
+7 - XGB Using Hyperparameter tuning Gridsearch (82%).
+8 - AdaBoost Using Hyperparameter tuning Gridsearch (83%).
 
 
 # Using some  hyperparameter optimization framework in machine learning 
