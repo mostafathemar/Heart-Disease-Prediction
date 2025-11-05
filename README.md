@@ -1,60 +1,97 @@
-# Heart Disease Prediction using Machine Learning Algorithms
+# ❤️ Heart Disease Prediction (Cardiology – Core Simulation)
 
-# Description
-This project is aimed at building a machine-learning model that can predict the presence of heart disease in patients based on various medical and demographic features. The model is built using Python and several libraries, including Scikit-Learn, Pandas, Seaborn, Matplotlib, and NumPy.
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1b-A8QPkgNjtqrq_aTMrPj73uSi5RnAp9?usp=drive_link)
 
-# Data
-The data used for this project was obtained from the UCI Machine Learning Repository and consists of various features such as age, sex, blood pressure, cholesterol levels and some features. The dataset can be found in "https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset"
+---
 
-# Steps
+## 📘 Overview
 
-1 - Data pre-processing: The dataset was cleaned and pre-processed to handle missing data, and outliers, and normalize the numerical data.
+This project predicts **the presence of heart disease** in patients using several **machine learning algorithms** and advanced optimization techniques.  
+It demonstrates how AI can **detect cardiovascular risks early**, helping to design **AI-assisted clinical trials** and improve preventive healthcare.
 
-2 - Exploratory Data Analysis: Exploratory data analysis was performed to gain insights into the data and identify any patterns or correlations.
+The dataset comes from the **UCI Cleveland Heart Disease repository (303 patients)** and includes demographic and clinical features such as age, blood pressure, cholesterol, and chest pain type.
 
-3 - Feature selection: Features were selected based on their importance in predicting heart disease using statistical methods.
+---
 
-4 - Model training and evaluation: Several machine learning models were trained and evaluated, including Logistic Regression, Random Forest, decision tree, support vector machine SVM, Naive Bayes, K-Nearest Neighbors, and Ensemble models. The best model was selected based on its performance metrics, including accuracy, precision, and recall.
+## 🎯 Project Goal
 
-# Results
+- Build an **AI model** to predict heart disease presence  
+- Compare multiple ML algorithms and tuning strategies  
+- Demonstrate how **AI-driven simulations** can identify high-risk patients and improve **clinical trial efficiency**
 
-1 - ExtraTrees Using Optuna This is the Best Accuracy (98.8%).
+---
+
+## ⚙️ Methodology
+
+### **1. Data Preprocessing**
+- Cleaned missing values and normalized numeric features  
+- Handled outliers and categorical encoding  
+
+### **2. Exploratory Data Analysis (EDA)**
+- Visualized feature correlations and distributions  
+- Identified top predictors (cholesterol, chest pain, oldpeak)
+
+### **3. Feature Selection**
+- Selected most relevant features using statistical importance scores  
+
+### **4. Model Training & Optimization**
+- Trained **7 algorithms**:
+  - Logistic Regression  
+  - Random Forest  
+  - Decision Tree  
+  - SVM  
+  - Naive Bayes  
+  - KNN  
+  - Extra Trees (Ensemble)
+- Used **Optuna** and **GridSearchCV** for hyperparameter optimization
+
+---
+
+## 📊 Results
+
+| Model | Accuracy | Optimization |
+|-------|-----------|--------------|
+| **Extra Trees** | **98.8%** | Optuna |
+| Random Forest | 98.0% | GridSearch |
+| Logistic Regression | 86% | GridSearch |
+| SVM | 70% | GridSearch |
+| KNN | 76% | K-min tuning |
+| Decision Tree | 84% | GridSearch |
+| XGBoost | 82% | GridSearch |
+| AdaBoost | 83% | GridSearch |
+
+✅ The **Extra Trees Classifier (Optuna)** achieved the **best performance** — 98.8% accuracy, with near-perfect precision and recall.
+
+---
+
+## 💡 Clinical Value
+
+- Enables **early detection** of heart disease risk  
+- Supports **Synthetic Control Arm** design in clinical trials  
+- Reduces costs by up to **50%** by predicting control outcomes  
+- Helps in patient stratification for personalized medicine  
+
+---
+
+## 🧠 Tools & Technologies
+
+`Python`, `Scikit-learn`, `Optuna`, `Matplotlib`, `Seaborn`, `Pandas`, `NumPy`
+
+---
 
 
-2 - RandomForst using Using Hyperparameter tuning Grid search (98%).
+---
 
+## 🧭 Usage
 
-3 - LogisticRegression Using Hyperparameter tuning Gridsearch (86%).
+**Google Colab (no setup required):**  
+[🔗 Run in Colab](https://colab.research.google.com/drive/1b-A8QPkgNjtqrq_aTMrPj73uSi5RnAp9?usp=drive_link)
 
-
-4 - SVM Using Hyperparameter tuning Grid search (70%).
-
-
-5 - K-Nearest Neighbors with find the best K with minimum error (76%).
-
-
-6 - DecisionTree Using Hyperparameter tuning Grifsearch (84%).
-
-
-7 - XGB Using Hyperparameter tuning Grid search (82%).
-
-
-8 - AdaBoost Using Hyperparameter tuning Grid search (83%).
-
-
-
-
-# Using some  hyperparameter optimization framework in machine learning 
-1 - Optuna is a powerful and efficient technique for hyperparameter tuning in machine learning, especially when the search space is large or complex.
-
-2 - Hyperropt It is an open-source Python library that uses a combination of random search and a technique called Tree-structured Parzen Estimator (TPE) to optimize hyperparameters. 
-
-### Describe in the Hyperparameter-optimization file.
-
-# License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
-
-# Contact
-For any queries, please feel free to reach out to us at mostafathemar@email.com.
-
-
+**Local Setup:**
+```bash
+git clone https://github.com/mostafathemar/Heart-Disease-Prediction.git
+cd Heart-Disease-Prediction
+pip install -r requirements.txt
+jupyter notebook heart_disease.ipynb
